@@ -1,0 +1,82 @@
+/* CSS styling here */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #011627;
+  color: #fdfffc;
+  text-align: center;
+  padding: 1rem;
+}
+
+.n-queen {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.inputbox {
+  position: relative;
+}
+
+.numberbox {
+  padding: 8px;
+  font-size: 14px;
+  border: none;
+  border-bottom: 2px solid #2ec4b6;
+  outline: none;
+  width: 50px;
+  text-align: center;
+}
+
+.numberbox:focus ~ label,
+.numberbox:valid ~ label {
+  top: -15px;
+  font-size: 12px;
+  color: #2ec4b6;
+}
+
+.solve-button {
+  background-color: #b306f2;
+  color: #fdfffc;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.solve-button:hover {
+  background-color: #247d73;
+}
+
+.chessboard {
+  display: grid;
+  grid-template-columns: repeat(var(--size), 1fr);
+  margin: 20px auto;
+  width: max-content;
+  border: 2px solid black;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 20px;
+  border: 1px solid black;
+}
+.ravi {
+background-color: #abd5d0;
+size: 200px;
+
+color: #011627;
+border: 20px;
+border-radius: 5px;
+block-size: auto;
+}
+.queen {
+  background-color: rgb(231, 16, 239);
+}
